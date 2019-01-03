@@ -3,9 +3,9 @@ $(document).ready(function()    {
 const start = function()  {
 
   const openCredits = document.getElementById("leah-mice__movie");
-  const playButton = document.getElementById("play-btn__movie");
-  const pauseButton = document.getElementById("pause-btn__movie");
-  const ppButton = document.getElementById("pp-btn__movie");
+  const playButton = document.getElementById("lr-play-btn__movie");
+  const pauseButton = document.getElementById("lr-pause-btn__movie");
+  const ppButton = document.getElementById("lr-pp-btn__movie");
 
 // array that holds Leah Rose titles
 const synopsisLeahRose = [`New York City.`, 
@@ -53,7 +53,7 @@ const soundPlay = function(e) {
       console.log("roll sound!")
   }
 
-  $("#play-btn__movie").on("click", function() {
+  $("#lr-play-btn__movie").on("click", function() {
     soundPlay(openCredits);
    });
  
@@ -63,7 +63,7 @@ const soundPlay = function(e) {
       console.log("pause sound!")
   }
 
-  $("#pause-btn__movie").on("click", function() {
+  $("#lr-pause-btn__movie").on("click", function() {
     soundPause(openCredits);
    });
 
@@ -74,16 +74,16 @@ const soundPlay = function(e) {
           openCredits.play();
           picturePlay();
         //   ppButton.textContent = "PAUSE";
-          $(".pp-symbol__movie").html("&#10073; &#10073;");
+          $(".lr-pp-symbol__movie").html("&#10073; &#10073;");
       }
       else {
           openCredits.pause();
         //   ppButton.textContent = "PLAY";
-          $(".pp-symbol__movie").html("&#x25ba;");
+          $(".lr-pp-symbol__movie").html("&#x25ba;");
   }
 }
 
-$("#pp-btn__movie").on("click", function() {
+$("#lr-pp-btn__movie").on("click", function() {
     soundPP(openCredits);
    });
 

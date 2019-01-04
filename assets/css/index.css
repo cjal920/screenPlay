@@ -26,7 +26,7 @@ body    {
 
 /* LEAH ROSE */
 
-.lr-container__index    {
+.project__index    {
     background: #fff;
     margin-top: 40px;
     padding-left: 50px;
@@ -34,59 +34,38 @@ body    {
     box-shadow: 10px 10px 5px 1px #2b2b2b;
 }
 
-  .lr-title__index {
+  .title__index {
     padding-top: 20px;
     color: #2b2b2b;
     font-size: 85px;
     font-weight: bold;
 }
 
-.lr-img-container__index {
+.img-container__index {
     position: relative;
     text-align: center;
     padding-top: 50px;
-}
+} 
 
-.lr-stats__index,
-.bl-stats__index,
-.f-stats__index {
+.stats__index   {
     color: #2b2b2b;
     font-size: 30px;
 }
 
-.lr-awards__index,
-.bl-awards__index,
-.f-awards__index    {
+.awards__index    {
     font-weight: bold;
 }
 
-#lr-awards-list__index,
-#bl-awards-list__index,
-#f-awards-list__index   {
+#awards-list__index  {
     color: #000;
     text-decoration: none;
 }
 
-#lr-awards-list__index:hover,
-#bl-awards-list__index:hover,
-#f-awards-list__index:hover     {
+#awards-list__index:hover    {
     font-weight: bold;
 }
 
-#lr-play-symbol__index {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 2.5em 0 2.5em 5em;
-    border-color: transparent transparent transparent #fff;
-    opacity: 0.5; 
-  }
-
-  #lr-play-symbol__index:hover {
-    opacity: 1; 
-  }  
-
-#lr-img__index  {
+#img__index  {
     border: solid 8px #2b2b2b;
     width: 100%; 
 }
@@ -103,63 +82,25 @@ body    {
     font-size: 70px;
 }
 
-.lr-screen__index {
-    position: relative;
-}
-
-.lr-screen-border__index    {
-    position: relative;
-    border: solid 4px #2b2b2b;
-}
-
-#black-screen__index  {
-    width: 100%;
-}
-
-#lr-play-btn__index,
-#lr-pause-btn__index,
-#lr-pp-btn__index      
-{
+#lr-pp-btn__index,
+#bl-pp-btn__index,
+#f-pp-btn__index    {
     background-color: #fff;
     border-color: transparent; 
     outline: none;
-}
+} 
 
-.lr-play-symbol__index   {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 40px 0 2.5em 5em;
-    border-color: transparent transparent transparent #000;
-    opacity: 0.25; 
-}
-
-.lr-play-symbol__index:hover {
-    opacity: 1; 
-  }
-
-.lr-pause-symbol__index {
-    outline-style: none;
-    margin-left:16px;
-    width: 56px;
-    height: 80px;
-    border-left: 18px solid #fff;
-    border-right: 18px solid #fff;
-    border-color: #000;
-    opacity: 0.25;
-  }
-
-  .lr-pause-symbol__index:hover {
-    opacity: 1; 
-  }
-
-  .lr-pp-symbol__index {
+  .lr-pp-symbol__index, 
+  .bl-pp-symbol__index, 
+  .f-pp-symbol__index   {
     font-size: 80px;
     color: #000;
     opacity: 0.25;
   }
 
-  .lr-pp-symbol__index:hover {
+  .lr-pp-symbol__index:hover, 
+  .bl-pp-symbol__index:hover,  
+  .f-pp-symbol__index:hover {
     opacity: 1; 
   }
 
@@ -286,17 +227,6 @@ body    {
     opacity: 1; 
   }
 
-  /* #bl-btn__index   {
-    background-color: #fff;
-    border-color: transparent;
-  }  */
-
-  .bl-img-container__index {
-    position: relative;
-    text-align: center;
-    padding-top: 100px;
-}  
-
 #bl-img__index  {
     border: solid 8px #2b2b2b;
     width: 100%;
@@ -361,24 +291,6 @@ body    {
     font-weight: bold;
 }
 
-.f-img-container__index {
-    position: relative;
-    text-align: center;
-    padding-top: 50px;
-} 
-
-#f-play-symbol__index {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 2.5em 0 2.5em 5em;
-    border-color: transparent transparent transparent #000;
-    opacity: 0.5; 
-  }
-
-  #f-play-symbol__index:hover {
-    opacity: 1;  
-  }
 
   #f-img__index  {
     border: solid 8px #2b2b2b;
@@ -405,43 +317,6 @@ body    {
     position: relative;
     border: solid 4px #2b2b2b;
 }
-
-#f-play-btn__index,
-#f-pause-btn__index,
-#f-pp-btn__index      
-{
-    background-color: #fff;
-    border-color: transparent; 
-    outline: none;
-}
-
-.f-play-symbol__index   {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 40px 0 2.5em 5em;
-    border-color: transparent transparent transparent #000;
-    opacity: 0.25; 
-}
-
-.f-play-symbol__index:hover {
-    opacity: 1; 
-  }
-
-.f-pause-symbol__index {
-    outline-style: none;
-    margin-left:16px;
-    width: 56px;
-    height: 80px;
-    border-left: 18px solid #fff;
-    border-right: 18px solid #fff;
-    border-color: #000;
-    opacity: 0.25;
-  }
-
-  .f-pause-symbol__index:hover {
-    opacity: 1; 
-  }
 
   .f-pp-symbol__index {
     font-size: 80px;

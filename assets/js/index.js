@@ -2,7 +2,7 @@ $(document).ready(function()    {
  
 const start = function()  {
 
-  const openCredits = document.getElementById("leah-mice__index");
+  const openCredits = document.getElementById("leah-eliz__index");
   const playButton = document.getElementById("lr-play-btn__index");
   const pauseButton = document.getElementById("lr-pause-btn__index");
   const ppButton = document.getElementById("lr-pp-btn__index");

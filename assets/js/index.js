@@ -8,7 +8,7 @@ const start = function()  {
   const ppButton = document.getElementById("lr-pp-btn__index");
 
 // array that holds Leah Rose titles
-const synopsisLeahRose = [`New York City.`, 
+const synopsisLeahRose = [`New York City.`,  
 `Summer 1929.`, 
 `She has it all. Youth. Beauty. A loving husband. A beautiful home. 
 Enough money for a lifetime.`, 
@@ -44,45 +44,45 @@ face whatever the dark days ahead may bring.`,
 `"This is a masterful work that deserves to be recognized and produced."`,
 `–– Austin Film Festival Reader`];
 
+const creditsLeahRose = [`A Colin Larkin Picture`, `LEAH ROSE`];
 
+// const soundPlay = function(e) {
+//       openCredits.play();
+//     //   synopsisLeahRose[0].start();
+//       picturePlay();
+//       console.log("roll sound!")
+//   }
 
-const soundPlay = function(e) {
-      openCredits.play();
-    //   synopsisLeahRose[0].start();
-      picturePlay();
-      console.log("roll sound!")
-  }
-
-  $("#lr-play-btn__index").on("click", function() {
-    soundPlay(openCredits);
-   });
+//   $("#lr-play-btn__index").on("click", function() {
+//     soundPlay(openCredits);
+//    });
  
-  const soundPause = function(e) {
-      openCredits.pause(); 
-    //   picturePause();
-      console.log("pause sound!")
-  }
+//   const soundPause = function(e) {
+//       openCredits.pause(); 
+//     //   picturePause();
+//       console.log("pause sound!")
+//   }
 
-  $("#lr-pause-btn__index").on("click", function() {
-    soundPause(openCredits);
-   });
+  // $("#lr-pause-btn__index").on("click", function() {
+  //   soundPause(openCredits);
+  //  });
 
 
 
-  const soundPP = function(e)   {
+  const soundTrailerLeahRose = function(e)   {
       if (openCredits.paused)  {
-          openCredits.play();
+          openCredits.play(); 
           picturePlay();
-          $(".lr-pp-symbol__index").html("&#10073; &#10073;");
+          $(".lr-trailer-symbol__index").html("&#10073; &#10073;");
       }
       else {
           openCredits.pause();
-          $(".lr-pp-symbol__index").html("&#x25ba;");
+          $(".lr-trailer-symbol__index").html("&#x25ba;");
   }
 }
 
-$("#lr-pp-btn__index").on("click", function() {
-    soundPP(openCredits);
+$("#lr-trailer-btn__index").on("click", function() {
+    soundTrailerLeahRose(openCredits);
    });
 
 const picturePlay = function(e)   {
@@ -116,6 +116,37 @@ const picturePlay = function(e)   {
 
 
 //   stop();
+const soundCreditsLeahRose = function(e)   {
+  if (openCredits.paused)  {
+      openCredits.play(); 
+      creditsPlay();
+      $(".lr-credits-symbol__index").html("&#10073; &#10073;");
+  }
+  else {
+      openCredits.pause();
+      $(".lr-credits-symbol__index").html("&#x25ba;");
+}
+}
+
+$("#lr-credits-btn__index").on("click", function() {
+soundCreditsLeahRose(openCredits);
+});
+
+const creditsPlay = function(e)   {
+ 
+  $("#lr-credit1__index").html(creditsLeahRose[0]).delay(1000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit2__index").html(creditsLeahRose[1]).delay(7000).fadeIn(500).delay(3000).fadeOut(500);
+
+  console.log("roll credits!")
+  // return;    
+//   stop();                                     // return to stop function?
+}
+
+
+
+
+
+
 
 };
 

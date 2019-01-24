@@ -2,10 +2,18 @@ $(document).ready(function()    {
  
 const start = function()  {
 
-  const openCredits = document.getElementById("leah-eliz__index");
-  const playButton = document.getElementById("lr-play-btn__index");
-  const pauseButton = document.getElementById("lr-pause-btn__index");
-  const ppButton = document.getElementById("lr-pp-btn__index");
+  const playEliz = document.getElementById("leah-eliz__index");
+  const playDelerue = document.getElementById("leah-delerue__index");
+  const playBugsy = document.getElementById("leah-bugsy__index");
+  const playOnegin = document.getElementById("leah-onegin__index");
+  const playRach = document.getElementById("leah-rach__index");
+
+  const playMice = document.getElementById("leah-mice__index");
+  const playPenderecki = document.getElementById("leah-penderecki__index");
+
+  // const playButton = document.getElementById("lr-play-btn__index");
+  // const pauseButton = document.getElementById("lr-pause-btn__index");
+  // const ppButton = document.getElementById("lr-pp-btn__index");
 
 // array that holds Leah Rose titles
 const synopsisLeahRose = [`New York City.`,  
@@ -44,7 +52,7 @@ face whatever the dark days ahead may bring.`,
 `"This is a masterful work that deserves to be recognized and produced."`,
 `–– Austin Film Festival Reader`];
 
-const creditsLeahRose = [`A Colin Larkin Picture`, `LEAH ROSE`];
+
 
 // const soundPlay = function(e) {
 //       openCredits.play();
@@ -67,25 +75,25 @@ const creditsLeahRose = [`A Colin Larkin Picture`, `LEAH ROSE`];
   //   soundPause(openCredits);
   //  });
 
-
+/* LEAH ROSE TRAILER */
 
   const soundTrailerLeahRose = function(e)   {
-      if (openCredits.paused)  {
-          openCredits.play(); 
-          picturePlay();
+      if (playPenderecki.paused)  {
+          playPenderecki.play(); 
+          trailerPlay();
           $(".lr-trailer-symbol__index").html("&#10073; &#10073;");
       }
       else {
-          openCredits.pause();
+          playPenderecki.pause();
           $(".lr-trailer-symbol__index").html("&#x25ba;");
   }
 }
 
 $("#lr-trailer-btn__index").on("click", function() {
-    soundTrailerLeahRose(openCredits);
+    soundTrailerLeahRose(playPenderecki);
    });
 
-const picturePlay = function(e)   {
+const trailerPlay = function(e)   {
      
       $("#lr-syn1__index").html(synopsisLeahRose[0]).delay(1000).fadeIn(500).delay(6000).fadeOut(500);
       $("#lr-syn2__index").html(synopsisLeahRose[1]).delay(4500).fadeIn(1000).delay(2000).fadeOut(500);
@@ -105,7 +113,7 @@ const picturePlay = function(e)   {
       $("#lr-aff__index").html(synopsisLeahRose[11]).delay(51000).fadeIn(1000).delay(6500).fadeOut(500);
           
 
-      console.log("roll credits!")
+      console.log("play trailer!")
       // return;    
     //   stop();                                     // return to stop function?
   }
@@ -116,28 +124,65 @@ const picturePlay = function(e)   {
 
 
 //   stop();
+
+/* LEAH ROSE CREDITS */
+
+const creditsLeahRose = 
+[`Sony Pictures Classics Presents`, 
+`A Plan B Production`,
+`JENNIFER LAWRENCE`,
+`MICHAEL FASSBENDER`, 
+`LEAH ROSE`,
+`Music by`,
+`GEORGES DELERUE`,
+`Director of Photography`,
+`ROGER DEAKINS`,
+`Produced by`,
+`BRAD PITT & COLIN LARKIN`,
+`Written and Directed by`,
+`COLIN LARKIN`];
+
+// How to get two lines to appear one above the other at the same time //
+
+
 const soundCreditsLeahRose = function(e)   {
-  if (openCredits.paused)  {
-      openCredits.play(); 
+  if (playDelerue.paused)  {
+      playDelerue.play(); 
       creditsPlay();
       $(".lr-credits-symbol__index").html("&#10073; &#10073;");
   }
   else {
-      openCredits.pause();
+      playDelerue.pause();
       $(".lr-credits-symbol__index").html("&#x25ba;");
 }
 }
 
 $("#lr-credits-btn__index").on("click", function() {
-soundCreditsLeahRose(openCredits);
+soundCreditsLeahRose(playDelerue);
 });
 
 const creditsPlay = function(e)   {
  
   $("#lr-credit1__index").html(creditsLeahRose[0]).delay(1000).fadeIn(500).delay(3000).fadeOut(500);
   $("#lr-credit2__index").html(creditsLeahRose[1]).delay(7000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit3__index").html(creditsLeahRose[2]).delay(13000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit4__index").html(creditsLeahRose[3]).delay(19000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit5__index").html(creditsLeahRose[4]).delay(25000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit6__index").html(creditsLeahRose[5]).delay(31000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit7__index").html(creditsLeahRose[6]).delay(31000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit8__index").html(creditsLeahRose[7]).delay(37000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit9__index").html(creditsLeahRose[8]).delay(37000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit10__index").html(creditsLeahRose[9]).delay(43000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit11__index").html(creditsLeahRose[10]).delay(43000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit12__index").html(creditsLeahRose[11]).delay(49000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit13__index").html(creditsLeahRose[12]).delay(49000).fadeIn(500).delay(3000).fadeOut(500);
 
-  console.log("roll credits!")
+
+
+
+
+
+  console.log("play movie!")
   // return;    
 //   stop();                                     // return to stop function?
 }
@@ -159,10 +204,10 @@ const creditsPlay = function(e)   {
 /* MAIN PAGE */  
 
 // from bottom index, brings us to Leah Rose trailer and plays trailer theme //
-const movieLeahRose = $("#leah-eliz")[0];
-$("#lr-play-symbol__index").on("click", function()   {
-  movieLeahRose.play();
-});
+// const movieLeahRose = $("#leah-eliz")[0];
+// $("#lr-play-symbol__index").on("click", function()   {
+//   movieLeahRose.play();
+// });
 
 
 /* LEAH ROSE PAGE */

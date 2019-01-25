@@ -129,7 +129,7 @@ const trailerPlay = function(e)   {
 
 const creditsLeahRose = 
 [`Sony Pictures Classics Presents`, 
-`A Plan B Production`,
+`A Working Title Production`,
 `JENNIFER LAWRENCE`,
 `MICHAEL FASSBENDER`, 
 `LEAH ROSE`,
@@ -138,7 +138,7 @@ const creditsLeahRose =
 `Director of Photography`,
 `ROGER DEAKINS`,
 `Produced by`,
-`BRAD PITT & COLIN LARKIN`,
+`WARREN BEATTY & COLIN LARKIN`,
 `Written and Directed by`,
 `COLIN LARKIN`];
 
@@ -182,15 +182,67 @@ const creditsPlay = function(e)   {
 
 
 
-  console.log("play movie!")
+  console.log("play credits!")
   // return;    
 //   stop();                                     // return to stop function?
 }
 
 
 
+/* LEAH ROSE MOVIE */
+
+const movieLeahRose = 
+[`Sony Pictures Classics Presents`, 
+`A Working Title Production`,
+`JENNIFER LAWRENCE`,
+`MICHAEL FASSBENDER`, 
+`LEAH ROSE`,
+`Music by`,
+`GEORGES DELERUE`,
+`Director of Photography`,
+`ROGER DEAKINS`,
+`Produced by`,
+`WARREN BEATTY & COLIN LARKIN`,
+`Written and Directed by`,
+`COLIN LARKIN`];
+
+const soundMovieLeahRose = function(e)   {
+  if (playEliz.paused)  {
+      playEliz.play(); 
+      moviePlay();
+      $(".lr-movie-symbol__index").html("&#10073; &#10073;");
+  }
+  else {
+      playEliz.pause();
+      $(".lr-movie-symbol__index").html("&#x25ba;");
+}
+}
+
+$("#lr-movie-btn__index").on("click", function() {
+  soundMovieLeahRose(playEliz);
+ });
+
+ const moviePlay = function(e)   {
+ 
+  $("#lr-movie1__index").html(movieLeahRose[0]).delay(1000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-movie2__index").html(movieLeahRose[1]).delay(7000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-movie3__index").html(movieLeahRose[2]).delay(13000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-movie4__index").html(movieLeahRose[3]).delay(19000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-movie5__index").html(movieLeahRose[4]).delay(25000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-movie6__index").html(movieLeahRose[5]).delay(31000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-movie7__index").html(movieLeahRose[6]).delay(31000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-movie8__index").html(movieLeahRose[7]).delay(37000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-movie9__index").html(movieLeahRose[8]).delay(37000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-movie10__index").html(movieLeahRose[9]).delay(43000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-movie11__index").html(movieLeahRose[10]).delay(43000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-movie12__index").html(movieLeahRose[11]).delay(49000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-movie13__index").html(movieLeahRose[12]).delay(49000).fadeIn(500).delay(3000).fadeOut(500);
 
 
+  console.log("play movie!")
+  // return;    
+//   stop();                                     // return to stop function?
+}
 
 
 };

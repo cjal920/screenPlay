@@ -6,6 +6,15 @@ body    {
     font-weight: 100;
 }
 
+.movie-container   {
+    width: 100%;
+    height: 700px;
+    color: #fff;
+    background: #000;
+    font-weight: 100;
+    z-index: -1;
+}
+
 #header  {
     position: fixed;
     height: 60px;
@@ -218,6 +227,34 @@ body    {
 #lr-credit11__index,
 #lr-credit12__index,
 #lr-credit13__index {
+    margin-top: 210px;
+    font-size: 35px;
+    text-align: center; 
+    display: none;
+}
+
+.lr-movie__index {
+    position: absolute;
+    /* margin-top: 1%; */
+    width: 100%;
+    color: #fff;
+    background: #000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#lr-movie1__index,
+#lr-movie2__index,
+#lr-movie3__index,
+#lr-movie4__index,
+#lr-movie5__index,
+#lr-movie6__index,
+#lr-movie7__index,
+#lr-movie8__index,
+#lr-movie9__index,
+#lr-movie10__index,
+#lr-movie11__index,
+#lr-movie12__index,
+#lr-movie13__index {
     margin-top: 210px;
     font-size: 35px;
     text-align: center; 

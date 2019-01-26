@@ -22,7 +22,7 @@ const synopsisLeahRose = [`New York City.`,
 Enough money for a lifetime.`, 
 `And during the last summer of the 1920s, popular socialite Leah Rose indulges
 in all the delights the good life has to offer with husband Alfred and their 
-circle of fabulous friends.`, 
+circle of friends.`, 
 `But what Leah and no one else around her knows is that these glorious golden days
 are numbered. Just a few miles south of her
 exclusive Upper East Side address, a storm is brewing on Wall Street. 
@@ -50,7 +50,7 @@ face whatever the dark days ahead may bring.`,
 `When the world around her lost its way, she made her own.`,
 `Leah Rose`, 
 `"This is a masterful work that deserves to be recognized and produced."`,
-`–– Austin Film Festival Reader`];
+`–– The Austin Film Festival`];
 
 
 
@@ -78,19 +78,19 @@ face whatever the dark days ahead may bring.`,
 /* LEAH ROSE TRAILER */
 
   const soundTrailerLeahRose = function(e)   {
-      if (playPenderecki.paused)  {
-          playPenderecki.play(); 
+      if (playBugsy.paused)  {
+          playBugsy.play(); 
           trailerPlay();
           $(".lr-trailer-symbol__index").html("&#10073; &#10073;");
       }
       else {
-          playPenderecki.pause();
+          playBugsy.pause();
           $(".lr-trailer-symbol__index").html("&#x25ba;");
   }
 }
 
 $("#lr-trailer-btn__index").on("click", function() {
-    soundTrailerLeahRose(playPenderecki);
+    soundTrailerLeahRose(playBugsy);
    });
 
 const trailerPlay = function(e)   {
@@ -98,19 +98,19 @@ const trailerPlay = function(e)   {
       $("#lr-syn1__index").html(synopsisLeahRose[0]).delay(1000).fadeIn(500).delay(6000).fadeOut(500);
       $("#lr-syn2__index").html(synopsisLeahRose[1]).delay(4500).fadeIn(1000).delay(2000).fadeOut(500);
       
-      $("#lr-syn3__index").html(synopsisLeahRose[2]).delay(11000).fadeIn(500).delay(19000).fadeOut(500);
-      $("#lr-syn4__index").html(synopsisLeahRose[3]).delay(14000).fadeIn(500).delay(16000).fadeOut(500);
-      $("#lr-syn5__index").html(synopsisLeahRose[4]).delay(16000).fadeIn(500).delay(14000).fadeOut(500);
-      $("#lr-syn6__index").html(synopsisLeahRose[5]).delay(19000).fadeIn(500).delay(11000).fadeOut(500);
-      $("#lr-syn7__index").html(synopsisLeahRose[6]).delay(22000).fadeIn(500).delay(8000).fadeOut(500);
-      $("#lr-syn8__index").html(synopsisLeahRose[7]).delay(25000).fadeIn(500).delay(5000).fadeOut(500);
+      $("#lr-syn3__index").html(synopsisLeahRose[2]).delay(11000).fadeIn(500).delay(50000).fadeOut(500);
+      $("#lr-syn4__index").html(synopsisLeahRose[3]).delay(17000).fadeIn(500).delay(44000).fadeOut(500);
+      $("#lr-syn5__index").html(synopsisLeahRose[4]).delay(26000).fadeIn(500).delay(35000).fadeOut(500);
+      $("#lr-syn6__index").html(synopsisLeahRose[5]).delay(32000).fadeIn(500).delay(29000).fadeOut(500);
+      $("#lr-syn7__index").html(synopsisLeahRose[6]).delay(38000).fadeIn(500).delay(23000).fadeOut(500);
+      $("#lr-syn8__index").html(synopsisLeahRose[7]).delay(44000).fadeIn(500).delay(17000).fadeOut(500);
       
-      $("#lr-tagline__index").html(synopsisLeahRose[8]).delay(33000).fadeIn(500).delay(11000).fadeOut(500);
-      $("#lr-title__index").html(synopsisLeahRose[9]).delay(38000).fadeIn(1000).delay(5500).fadeOut(500);
+      $("#lr-tagline__index").html(synopsisLeahRose[8]).delay(65000).fadeIn(500).delay(11000).fadeOut(500);
+      $("#lr-title__index").html(synopsisLeahRose[9]).delay(70000).fadeIn(1000).delay(5500).fadeOut(500);
       
-      $("#lr-aff-img__index").delay(46000).fadeIn(1000).delay(11500).fadeOut(500);
-      $("#lr-quote__index").html(synopsisLeahRose[10]).delay(49000).fadeIn(1000).delay(8500).fadeOut(500);
-      $("#lr-aff__index").html(synopsisLeahRose[11]).delay(51000).fadeIn(1000).delay(6500).fadeOut(500);
+      $("#lr-aff-img__index").delay(80000).fadeIn(1000).delay(11500).fadeOut(500);
+      $("#lr-quote__index").html(synopsisLeahRose[10]).delay(83000).fadeIn(1000).delay(8500).fadeOut(500);
+      $("#lr-aff__index").html(synopsisLeahRose[11]).delay(86000).fadeIn(1000).delay(5500).fadeOut(500);
           
 
       console.log("play trailer!")
@@ -129,7 +129,7 @@ const trailerPlay = function(e)   {
 
 const creditsLeahRose = 
 [`Sony Pictures Classics Presents`, 
-`A Working Title Production`,
+`A Colin Larkin Picture`,
 `JENNIFER LAWRENCE`,
 `MICHAEL FASSBENDER`, 
 `LEAH ROSE`,
@@ -215,7 +215,7 @@ const soundMovieLeahRose = function(e)   {
   else {
       playEliz.pause();
       $(".lr-movie-symbol__index").html("&#x25ba;");
-}
+} 
 }
 
 $("#lr-movie-btn__index").on("click", function() {

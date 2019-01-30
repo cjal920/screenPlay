@@ -212,7 +212,7 @@ body    {
 
 .lr-credits__index {
     position: absolute;
-    /* margin-top: 1%; */
+    margin-top: 25%;
     width: 100%;
     color: #fff;
     font-family: 'Times New Roman', Times, serif;
@@ -230,12 +230,41 @@ body    {
 #lr-credit10__index,
 #lr-credit11__index,
 #lr-credit12__index,
-#lr-credit13__index {
-    margin-top: 200px;
+#lr-credit13__index,
+#lr-credit14__index,
+#lr-credit15__index,
+#lr-credit16__index {
+    /* margin-top: 200px; */
     font-size: 35px;
     text-align: center; 
     display: none;
 }
+
+/* #lr-credit1__index, */
+#lr-credit2__index,
+#lr-credit3__index,
+/* #lr-credit4__index, */
+#lr-credit5__index,
+/* #lr-credit6__index,
+#lr-credit7__index,
+#lr-credit8__index, */
+#lr-credit9__index,
+/* #lr-credit10__index, */
+#lr-credit11__index,
+/* #lr-credit12__index, */
+#lr-credit13__index,
+/* #lr-credit14__index, */
+#lr-credit15__index {
+/* #lr-credit16__index { */
+    /* margin-top: 200px; */
+    font-size: 20px;
+    text-align: center; 
+    display: none;
+}
+
+
+
+
 
 /* .lr-movie__index {
     position: absolute;

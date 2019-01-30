@@ -128,8 +128,11 @@ const trailerPlay = function(e)   {
 /* LEAH ROSE CREDITS */
 
 const creditsLeahRose = 
-[`Sony Pictures Classics Presents`, 
-`A Colin Larkin Picture`,
+[`Sony Pictures Classics`, 
+`Presents`, 
+`A`, 
+`Colin Larkin`, 
+`Picture`,
 `JENNIFER LAWRENCE`,
 `MICHAEL FASSBENDER`, 
 `LEAH ROSE`,
@@ -164,19 +167,22 @@ soundCreditsLeahRose(playMice);
 const creditsPlay = function(e)   {
  
   $("#lr-credit1__index").html(creditsLeahRose[0]).delay(1000).fadeIn(500).delay(3000).fadeOut(500);
-  $("#lr-credit2__index").html(creditsLeahRose[1]).delay(7000).fadeIn(500).delay(3000).fadeOut(500);
-  $("#lr-credit3__index").html(creditsLeahRose[2]).delay(13000).fadeIn(500).delay(3000).fadeOut(500);
-  $("#lr-credit4__index").html(creditsLeahRose[3]).delay(19000).fadeIn(500).delay(3000).fadeOut(500);
-  $("#lr-credit5__index").html(creditsLeahRose[4]).delay(25000).fadeIn(500).delay(3000).fadeOut(500);
-  $("#lr-credit6__index").html(creditsLeahRose[5]).delay(31000).fadeIn(500).delay(3000).fadeOut(500);
-  $("#lr-credit7__index").html(creditsLeahRose[6]).delay(31000).fadeIn(500).delay(3000).fadeOut(500);
-  $("#lr-credit8__index").html(creditsLeahRose[7]).delay(37000).fadeIn(500).delay(3000).fadeOut(500);
-  $("#lr-credit9__index").html(creditsLeahRose[8]).delay(37000).fadeIn(500).delay(3000).fadeOut(500);
-  $("#lr-credit10__index").html(creditsLeahRose[9]).delay(43000).fadeIn(500).delay(3000).fadeOut(500);
-  $("#lr-credit11__index").html(creditsLeahRose[10]).delay(43000).fadeIn(500).delay(3000).fadeOut(500);
-  $("#lr-credit12__index").html(creditsLeahRose[11]).delay(49000).fadeIn(500).delay(3000).fadeOut(500);
-  $("#lr-credit13__index").html(creditsLeahRose[12]).delay(49000).fadeIn(500).delay(3000).fadeOut(500);
-
+  $("#lr-credit2__index").html(creditsLeahRose[1]).delay(1000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit3__index").html(creditsLeahRose[2]).delay(7000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit4__index").html(creditsLeahRose[3]).delay(7000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit5__index").html(creditsLeahRose[4]).delay(7000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit6__index").html(creditsLeahRose[5]).delay(13000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit7__index").html(creditsLeahRose[6]).delay(19000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit8__index").html(creditsLeahRose[7]).delay(25000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit9__index").html(creditsLeahRose[8]).delay(31000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit10__index").html(creditsLeahRose[9]).delay(31000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit11__index").html(creditsLeahRose[10]).delay(37000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit12__index").html(creditsLeahRose[11]).delay(37000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit13__index").html(creditsLeahRose[12]).delay(43000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit14__index").html(creditsLeahRose[13]).delay(43000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit15__index").html(creditsLeahRose[14]).delay(49000).fadeIn(500).delay(3000).fadeOut(500);
+  $("#lr-credit16__index").html(creditsLeahRose[15]).delay(49000).fadeIn(500).delay(3000).fadeOut(500);
+  
 
 
 

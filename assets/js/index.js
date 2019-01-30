@@ -146,19 +146,19 @@ const creditsLeahRose =
 
 
 const soundCreditsLeahRose = function(e)   {
-  if (playDelerue.paused)  {
-      playDelerue.play(); 
+  if (playMice.paused)  {
+      playMice.play(); 
       creditsPlay();
       $(".lr-credits-symbol__index").html("&#10073; &#10073;");
   }
   else {
-      playDelerue.pause();
+      playMice.pause();
       $(".lr-credits-symbol__index").html("&#x25ba;");
 }
 }
 
 $("#lr-credits-btn__index").on("click", function() {
-soundCreditsLeahRose(playDelerue);
+soundCreditsLeahRose(playMice);
 });
 
 const creditsPlay = function(e)   {

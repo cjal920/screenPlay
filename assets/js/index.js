@@ -5,12 +5,14 @@ const start = function()  {
   const playEliz = document.getElementById("leah-eliz__index");
   const playDelerue = document.getElementById("leah-delerue__index");
   const playBugsy = document.getElementById("leah-bugsy__index");
-  const playOnegin = document.getElementById("leah-onegin__index");
   const playRach = document.getElementById("leah-rach__index");
-
+  const playCava = document.getElementById("leah-cava__index");
+  const playDays = document.getElementById("leah-days__index");
+  const playFatman = document.getElementById("leah-fatman__index");
   const playMice = document.getElementById("leah-mice__index");
   const playPenderecki = document.getElementById("leah-penderecki__index");
 
+    // const playOnegin = document.getElementById("leah-onegin__index");
   // const playButton = document.getElementById("lr-play-btn__index");
   // const pauseButton = document.getElementById("lr-pause-btn__index");
   // const ppButton = document.getElementById("lr-pp-btn__index");
@@ -78,19 +80,19 @@ face whatever the dark days ahead may bring.`,
 /* LEAH ROSE TRAILER */
 
   const soundTrailerLeahRose = function(e)   {
-      if (playBugsy.paused)  {
-          playBugsy.play(); 
+      if (playFatman.paused)  {
+          playFatman.play(); 
           trailerPlay();
-          $(".lr-trailer-symbol__index").html("&#10073; &#10073;");
+          $(".lr-trailer-symbol__index").html("&#8545;");
       }
       else {
-          playBugsy.pause();
+          playFatman.pause();
           $(".lr-trailer-symbol__index").html("&#x25ba;");
   }
 }
 
 $("#lr-trailer-btn__index").on("click", function() {
-    soundTrailerLeahRose(playBugsy);
+    soundTrailerLeahRose(playFatman);
    });
 
 const trailerPlay = function(e)   {
@@ -149,19 +151,19 @@ const creditsLeahRose =
 
 
 const soundCreditsLeahRose = function(e)   {
-  if (playMice.paused)  {
-      playMice.play(); 
+  if (playDays.paused)  {
+      playDays.play(); 
       creditsPlay();
-      $(".lr-credits-symbol__index").html("&#10073; &#10073;");
+      $(".lr-credits-symbol__index").html("&#8545;");
   }
   else {
-      playMice.pause();
+      playDays.pause();
       $(".lr-credits-symbol__index").html("&#x25ba;");
 }
 }
 
 $("#lr-credits-btn__index").on("click", function() {
-soundCreditsLeahRose(playMice);
+soundCreditsLeahRose(playDays);
 });
 
 const creditsPlay = function(e)   {

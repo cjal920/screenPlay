@@ -108,6 +108,7 @@ body    {
   .bl-trailer-symbol__index, 
   .f-trailer-symbol__index   {
     font-size: 80px;
+    font-weight: bold;
     color: #000;
     opacity: 0.25;
   } 
@@ -143,9 +144,9 @@ body    {
 
 
 #lr-syn3__index {
-        font-size: 14px;
-        margin-top: 5%;
         margin-left: 3%;
+        margin-top: 5%;
+        font-size: 17px;
         width: 90%;
         display: none;
 }
@@ -155,7 +156,7 @@ body    {
 #lr-syn7__index,
 #lr-syn8__index {
         margin-left: 3%;
-        font-size: 14px;
+        font-size: 17px;
         margin-top: 2%;
         width: 90%;
         display: none;
@@ -212,7 +213,7 @@ body    {
 
 .lr-credits__index {
     position: absolute;
-    margin-top: 25%;
+    /* margin-top: 25%; */
     width: 100%;
     color: #fff;
     font-family: 'Times New Roman', Times, serif;

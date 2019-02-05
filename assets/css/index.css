@@ -213,7 +213,7 @@ body    {
 
 .lr-credits__index {
     position: absolute;
-    /* margin-top: 25%; */
+    margin-top: 25%;
     width: 100%;
     color: #fff;
     font-family: 'Times New Roman', Times, serif;
@@ -235,7 +235,7 @@ body    {
 #lr-credit14__index,
 #lr-credit15__index,
 #lr-credit16__index {
-    /* margin-top: 200px; */
+    /* margin-top: 25%; */
     font-size: 35px;
     text-align: center; 
     display: none;

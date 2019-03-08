@@ -1,0 +1,367 @@
+/* MAIN */
+
+body    {
+    color: #fff;
+    background: #000;
+    font-weight: 100;
+}
+
+
+
+
+/* LEAH ROSE */
+
+.lr-syn   {
+    position: absolute;
+    width: 90%;
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+    font-size: 18px;
+    color: #fff;
+}
+
+#lr-syn1   {
+    margin-top: 20%;
+    font-family: 'Cormorant Upright', serif;  
+    font-size: 30px;
+    text-align: center; 
+    display: none;
+}
+
+#lr-syn2   {
+    margin-top: -27px;
+    font-size: 30px; 
+    font-family: 'Cormorant Upright', serif;  
+    text-align: center; 
+    display: none;
+}
+
+#lr-syn3,
+#lr-syn4,
+#lr-syn5,
+#lr-syn6,
+#lr-syn7,
+#lr-syn8
+{
+    text-shadow: 2px 2px #000;
+    display: none;
+}
+
+
+#leah-rose-tag  {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    font-family: 'Cinzel', serif;
+    font-size: 28px;
+    display: none;
+}
+
+.leah-rose-title-two    {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        padding-top: 250px;
+        font-family: 'Cinzel', serif;
+        font-size: 120px;
+        display: none;
+}
+
+.lr-movie__index {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    background: #000;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#lr-movie1__index,
+#lr-movie2__index,
+#lr-movie3__index,
+#lr-movie4__index,
+#lr-movie5__index,
+#lr-movie6__index,
+#lr-movie7__index,
+#lr-movie8__index,
+#lr-movie9__index,
+#lr-movie10__index,
+#lr-movie11__index,
+#lr-movie12__index,
+#lr-movie13__index {
+    /* margin-top: 210px; */
+    font-size: 35px;
+    text-align: center; 
+    /* display: none; */
+}
+
+
+/* #lr-credit6__index,
+#lr-credit8__index,
+#lr-credit10__index,
+#lr-credit12__index {
+    margin-top: 200px;
+    font-size: 35px;
+    text-align: center; 
+    display: none;
+}
+
+#lr-credit7__index,
+#lr-credit9__index,
+#lr-credit11__index,
+#lr-credit13__index {
+    margin-top: 230px;
+    font-size: 35px;
+    text-align: center; 
+    display: none;
+} */
+
+
+
+
+
+
+
+  
+/* BETWEEN LINES */
+
+.bl-container__index    {
+    background: #fff;
+    margin-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 10px 10px 5px 1px #2b2b2b;
+}
+
+.bl-title__index {
+    padding-top: 100px;
+    /* padding-bottom: 100px; */
+    color: #2b2b2b;
+    font-size: 85px;
+    font-weight: bold;
+}
+
+#bl-play-symbol__index {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 2.5em 0 2.5em 5em;
+    border-color: transparent transparent transparent #000;
+    opacity: 0.5; 
+  }
+
+  #bl-play-symbol__index:hover {
+    opacity: 1; 
+  }
+
+#bl-img__index  {
+    border: solid 8px #2b2b2b;
+    width: 100%;
+}
+
+.bl-title-img__index    {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    font-family: 'Special Elite', cursive;
+    color: #ff4500;
+    text-shadow: 2px 2px #000;
+    font-size: 50px;
+}
+
+#bl-play-btn__index,
+#bl-pause-btn__index,
+#bl-pp-btn__index      {
+    background-color: #fff;
+    border-color: transparent; 
+    outline: none;
+    /* padding: 10px; */
+}
+
+.bl-pp-symbol__index {
+    font-size: 80px;
+    color: #000;
+    opacity: 0.25;
+  }
+
+  .bl-pp-symbol__index:hover {
+    opacity: 1; 
+  }
+
+
+
+
+#bl-screen-img__index   {
+    /* position: relative; */
+    border: solid 8px #2b2b2b;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+  /* FISHTOWN */
+
+  .f-container__index    {
+    background: #fff;
+    margin-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 10px 10px 5px 1px #2b2b2b;
+}
+
+  .f-title__index {
+    padding-top: 100px;
+    color: #2b2b2b;
+    font-size: 85px;
+    font-weight: bold;
+}
+
+
+  #f-img__index  {
+    border: solid 8px #2b2b2b;
+    width: 100%;
+}
+
+.f-title-img__index    {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    font-family: 'Indie Flower', cursive;
+    color: #7bff00;
+    text-shadow: 4px 4px #000;
+    font-size: 70px;
+}
+
+.f-screen__index {
+    position: relative;
+}
+
+.f-screen-border__index    {
+    position: relative;
+    border: solid 4px #2b2b2b;
+}
+
+  .f-pp-symbol__index {
+    font-size: 80px;
+    color: #000;
+    opacity: 0.25;
+  }
+
+  .f-pp-symbol__index:hover {
+    opacity: 1; 
+  }  
+
+  .f-synopsis__index {
+    position: absolute;
+    margin-top: 1%;
+    width: 100%;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#f-syn1__index {
+    margin-top: 200px;
+    font-size: 20px;
+    text-align: center; 
+    display: none;
+}
+
+#f-syn2__index {
+    font-size: 20px; 
+    text-align: center; 
+    display: none;
+}
+
+
+#f-syn3__index {
+        font-size: 14px;
+        margin-top: 5%;
+        margin-left: 3%;
+        width: 90%;
+        display: none;
+}
+#f-syn4__index,
+#f-syn5__index,
+#f-syn6__index,
+#f-syn7__index,
+#f-syn8__index {
+        margin-left: 3%;
+        font-size: 14px;
+        margin-top: 2%;
+        width: 90%;
+        display: none;
+}
+
+#f-tagline__index {
+    margin-top: 175px;
+    font-size: 20px;
+    text-align: center; 
+    width: 100%;
+    display: none;
+}
+
+#f-title__index {
+    color: #a69870;
+    font-family: 'Rochester', cursive;
+    font-size: 100px;
+    text-align: center; 
+    width: 100%;
+    display: none;
+}
+
+#f-aff-img__index {
+    padding-top: 75px;
+    padding-left: 400px;
+    filter: opacity(0.5) drop-shadow(0 0 0 #fff) brightness(100%);
+    display: none;
+  }
+
+#f-quote__index {
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center; 
+    width: 100%;
+    display: none;
+}
+
+#f-aff__index  {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center; 
+    width: 100%;
+    display: none;
+}
+
+
+#f-screen-img__index   {
+    border: solid 8px #2b2b2b;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+} 
+
+
+
+/* data-content-field */
+
+
+
+#newhope-screen-img__index,
+#empire-screen-img__index,
+#jedi-screen-img__index  {
+    border: solid 8px #2b2b2b;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    /* position: relative; */
+    /* display: none; */
+    /* position: relative; */
+    /* opacity: 0.5; */
+    /* z-index: -1; */
+    /* display: none; */
+}

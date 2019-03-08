@@ -1,0 +1,190 @@
+body    {
+    background-color: #000;
+}
+
+/* LEAH ROSE PAGE */  
+
+#lr-full   {
+    position: relative;
+    opacity: 1;
+    width: 100%;
+    z-index: -1;
+    display: none;
+}
+
+.lr-title1   {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 50%;
+    font-family: 'Cinzel', serif;
+    font-size: 120px;
+    text-shadow: 2px 2px #000;
+    display: none;
+}
+
+.poster-lr-page  {
+    position: relative;
+    margin-top: 5%;
+    width: 100%
+    /* background-color: #000; */
+    /* z-index: 1; */
+}
+
+#lr-half   {
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    z-index: -1;
+    display: none;
+}
+
+.lr-title2   {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 90%;
+    font-family: 'Cinzel', serif;
+    font-size: 65px;
+    color: #927e3d;
+    text-shadow: 1px 1px #000;
+    display: none;
+}
+
+#low-man-img    {
+    position: relative;
+    opacity: 1;
+    width: 100%;
+}
+
+#outdoor-party   {
+    position: relative;
+    opacity: 0.5;
+    width: 100%;
+    z-index: -1;
+    display: none;
+}
+
+.lr-syn   {
+    position: absolute;
+    width: 90%;
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+    font-size: 18px;
+    color: #fff;
+}
+
+#lr-syn1   {
+    margin-top: 20%;
+    font-family: 'Cormorant Upright', serif;  
+    font-size: 30px;
+    text-align: center; 
+    display: none;
+}
+
+#lr-syn2   {
+    margin-top: -27px;
+    font-size: 30px; 
+    font-family: 'Cormorant Upright', serif;  
+    text-align: center; 
+    display: none;
+}
+
+#lr-syn3,
+#lr-syn4,
+#lr-syn5,
+#lr-syn6,
+#lr-syn7,
+#lr-syn8
+{
+    text-shadow: 2px 2px #000;
+    display: none;
+}
+
+
+#leah-rose-tag  {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    font-family: 'Cinzel', serif;
+    font-size: 28px;
+    display: none;
+}
+
+.leah-rose-title-two    {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        padding-top: 250px;
+        font-family: 'Cinzel', serif;
+        font-size: 120px;
+        display: none;
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+        .leah-rose-title-two    {
+            padding-top: 300px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+}
+
+
+@media only screen and (max-width: 575px) {
+
+        .leah-rose-title-two    {
+            padding-top: 350px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fishtown-title  {
+    position: absolute;
+    text-align: center;
+    top: 80%;
+    left: 50%;
+    transform: translate(-100%, -100%);
+    color: #927e3d;
+    font-size: 30px;
+}
+
+/* .poster-image:hover   {
+
+} */

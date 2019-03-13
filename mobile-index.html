@@ -53,7 +53,7 @@ body {font-family: "Lato", sans-serif}
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
   <!-- Automatic Slideshow Images -->
-  <div class="mySlides w3-display-container w3-center">
+  <!-- <div class="mySlides w3-display-container w3-center">
     <img src="/w3images/la.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
       <h3>Los Angeles</h3>
@@ -73,9 +73,9 @@ body {font-family: "Lato", sans-serif}
       <h3>Chicago</h3>
       <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
     </div>
-  </div>
+  </div> -->
 
-  <!-- The Band Section -->
+  <!-- About Me -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
     <h2 class="w3-wide">COLIN LARKIN</h2>
     <p class="w3-opacity"><i>writer</i></p>
@@ -123,10 +123,10 @@ body {font-family: "Lato", sans-serif}
     </div> -->
   </div>
 
-  <!-- The Tour Section -->
-  <div class="w3-black" id="tour">
+  <!-- PROJECTS --> 
+  <div class="w3-black" id="tour" style="height:500px">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">PROJECTS</h2>
+      <h2 class="w3-wide w3-center" style="padding-bottom: 100px">PROJECTS</h2>
       <!-- <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br> -->
 <!-- 
       <ul class="w3-ul w3-border w3-white w3-text-grey">
@@ -135,18 +135,13 @@ body {font-family: "Lato", sans-serif}
         <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
       </ul> -->
 
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+      <div class="w3-row-padding">
         <div class="w3-third w3-margin-bottom">
           <!-- <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity"> -->
           <div class="w3-container w3-white">
             <p><b>LEAH ROSE</b></p>
             <p class="w3-opacity">Drama | Feature | 100 pages</p>
-
-            <p> When the Crash of 1929 shatters the good life she’s always known, 
-                a spoiled socialite finds purpose through adversity as she fights 
-                to make her way in a harrowing new world.</p>
-
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Watch Trailer</button>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('lr-Modal').style.display='block'">Watch Trailer</button>
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
@@ -154,11 +149,7 @@ body {font-family: "Lato", sans-serif}
           <div class="w3-container w3-white">
             <p><b>BETWEEN LINES</b></p>
             <p class="w3-opacity">Drama | Feature | 90 pages</p>
-            <p>                        It's a race against time for a frustrated writer who attempts to mend his wild
-                ways before an upcoming high school reunion after he learns that a member of his class
-                has just made a splash in the literary world; but is she a rival he seeks to 
-                impress or the one who got away?</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Watch Trailer</button>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('bl-Modal').style.display='block'">Watch Trailer</button>
           </div>
         </div>
         <div class="w3-third w3-margin-bottom">
@@ -166,11 +157,7 @@ body {font-family: "Lato", sans-serif}
           <div class="w3-container w3-white">
             <p><b>FISHTOWN</b></p>
             <p class="w3-opacity">Drama | Pilot | 58 pages</p>
-            <p>                       A talented young chef whose abilities have outgrown his gig at a neighborhood dive 
-                must choose between loyalty to a mentor and taking his career to the next level with 
-                the help of his ambitious wife.
-               </p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Watch Trailer</button>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('f-Modal').style.display='block'">Watch Trailer</button>
           </div>
         </div>
       </div>
@@ -178,10 +165,15 @@ body {font-family: "Lato", sans-serif}
   </div>
 
   <!-- Project Modal -->
-  <div id="ticketModal" class="w3-modal">
+  <div id="lr-Modal" class="w3-modal">
+
+      <p> When the Crash of 1929 shatters the good life she’s always known, 
+          a spoiled socialite finds purpose through adversity as she fights 
+          to make her way in a harrowing new world.</p>
+
     <div class="w3-modal-content w3-animate-top w3-card-4">
       <header class="w3-container w3-teal w3-center w3-padding-32"> 
-        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+        <span onclick="document.getElementById('lr-Modal').style.display='none'" 
        class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
         <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
       </header>
@@ -191,16 +183,67 @@ body {font-family: "Lato", sans-serif}
         <p><label><i class="fa fa-user"></i> Send To</label></p>
         <input class="w3-input w3-border" type="text" placeholder="Enter email">
         <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
-        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('lr-Modal').style.display='none'">Close <i class="fa fa-remove"></i></button>
         <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
       </div>
     </div>
   </div>
 
+  <div id="bl-Modal" class="w3-modal">
+
+      <p>  It's a race against time for a frustrated writer who attempts to mend his wild
+      ways before an upcoming high school reunion after he learns that a member of his class
+      has just made a splash in the literary world; but is she a rival he seeks to 
+      impress or the one who got away?</p>
+
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container w3-teal w3-center w3-padding-32"> 
+          <span onclick="document.getElementById('bl-Modal').style.display='none'" 
+         class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+        </header>
+        <div class="w3-container">
+          <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+          <input class="w3-input w3-border" type="text" placeholder="How many?">
+          <p><label><i class="fa fa-user"></i> Send To</label></p>
+          <input class="w3-input w3-border" type="text" placeholder="Enter email">
+          <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+          <button class="w3-button w3-red w3-section" onclick="document.getElementById('bl-Modal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+          <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="f-Modal" class="w3-modal">
+
+        <p>                       A talented young chef whose abilities have outgrown his gig at a neighborhood dive 
+            must choose between loyalty to a mentor and taking his career to the next level with 
+            the help of his ambitious wife.
+           </p>
+  
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container w3-teal w3-center w3-padding-32"> 
+            <span onclick="document.getElementById('f-Modal').style.display='none'" 
+           class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+            <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+          </header>
+          <div class="w3-container">
+            <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+            <input class="w3-input w3-border" type="text" placeholder="How many?">
+            <p><label><i class="fa fa-user"></i> Send To</label></p>
+            <input class="w3-input w3-border" type="text" placeholder="Enter email">
+            <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+            <button class="w3-button w3-red w3-section" onclick="document.getElementById('f-Modal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+            <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+          </div>
+        </div>
+      </div>
+
+
   <!-- The Contact Section -->
   <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
     <h2 class="w3-wide w3-center">CONTACT</h2>
-    <p class="w3-opacity w3-center"><i>Let's connect!</i></p>
+    <p class="w3-opacity w3-center"><i>3 . . . 2 . . . 1 . . .</i></p>
     <div class="w3-row w3-padding-32">
       <div class="w3-col m6 w3-large w3-margin-bottom">
         <i class="fa fa-map-marker" style="width:30px"></i> Philadelphia, PA<br>

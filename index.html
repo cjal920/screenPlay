@@ -1,340 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Colin Larkin | Screenwriter</title>
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans:700|Special+Elite" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Parisienne|Rochester" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://code.jquery.com/jquery.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="assets/css/index.css">
-  <title>Colin Larkin | Screenwriter</title>
-</head>
-
+<title>Colin Larkin | Screenwriter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel="stylesheet" href="assets/css/mobile-index.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
 <body>
 
-  <div id="header">
-    <div class="nav navbar">
-      <div class="nav-links"><a href="mobile-index.html">HOME</a></div>
-      <!-- <div class="nav-links"><a href="index.html">TRAILERS</a></div> -->
-      <div class="nav-links"><a href="index.html">&#9755;</a></div>  
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <!-- <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a> -->
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">FEATURES <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="leah-rose.html" class="w3-bar-item w3-button" target="_blank">Leah Rose</a>
+        <a href="between-lines.html" class="w3-bar-item w3-button" target="_blank">Between Lines</a>
+      </div>
+    </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">PILOTS <i class="fa fa-caret-down"></i></button>     
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="fishtown.html" class="w3-bar-item w3-button" target="_blank">Fishtown</a>
+        </div>
+      </div>
+      <a href="main.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">&#9755;</a>
+
+
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <!-- <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/la.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Los Angeles</h3>
+      <p><b>We had the best time playing at Venice Beach!</b></p>   
     </div>
   </div>
-        
-  <div id="main">
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/ny.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>New York</h3>
+      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="/w3images/chicago.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Chicago</h3>
+      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+    </div>
+  </div> -->
 
-        <!-- LEAH ROSE -->
+  <!-- About Me -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">COLIN LARKIN</h2>
+    <p class="w3-opacity"><i>writer</i></p>
+    <p class="w3-justify">
 
-    <div class="project__index container">
-      <div class="row">
-        <div class="col-sm-8 col-md-8 col-lg-8">
+        A writer of stage and screen, 
+        I have had the pleasure of 
+        seeing several of my plays 
+        produced and the privilege of 
+        being invited to pitch to a major studio. 
+        <br><br>
 
-          <div class="title__index">LEAH ROSE</div>
-
-            <div class="about__index">
-              <p class="stats__index">Drama | Feature | 100 pages</p>
-                <p class="lr-logline__index"><em>
-                  
-                  When the Crash of 1929 shatters the good life she’s always known, 
-                  a socialite finds purpose through adversity as she fights 
-                  to make her way in a harrowing new world.
-                
-                </em></p>
-                <div class="awards__index">AWARDS</div>
-                  <a href="https://austinfilmfestival.com/submit/screenplay-and-teleplay-submissions-2/2018-script-competition-semifinalists-second-rounders/" id="awards-list__index" target="_blank">Austin Film Festival 2018 Semifinalist</a>
-                  <br><a href="http://www.creativeworldawards.com/wp-content/uploads/2018/08/2018-CWA-SEMI-FINALISTS-DRAMA-AND-FAMILY.pdf" id="awards-list__index" target="_blank">Creative World Awards 2018 Semifinalist</a>
-                  <br><a href="https://www.wescreenplay.com/blog/diverse-voices-spring-2017-semi-finalists/" id="awards-list__index" target="_blank">WeScreenplay Diverse Voices Spring 2017 Semifinalist</a>
-                  <br><a href="https://www.moviebytes.com/ContestDetail.cfm?StoryID=7296&ContestNumber=123&tab=tab3" id="awards-list__index" target="_blank">Scriptapalooza 2017 Quarterfinalist</a>
-                  <br><a href="" id="awards-list__index">Nicholl Fellowship 2016 Top 20%</a>
-                  <br><a href="https://www.bluecatscreenplay.com/uncategorized/2014-quarterfinalists/?utm_source=2014+Quarter-Finalist+Black+Template+USE+THIS+ONE&utm_campaign=2014+Quarter-Finalists%21&utm_medium=email" id="awards-list__index" target="_blank">BlueCat 2014 Quarterfinalist (<em>as The Heirs</em>)</a>
-                
-            </div>
-
-              <button id="lr-trailer-btn__index">
-                <div class="lr-trailer-symbol__index">&#x25ba;</div>
-                <div>PLAY TRAILER</div>
-              </button>
-
-              <button id="lr-credits-btn__index">
-                <div class="lr-credits-symbol__index">&#x25ba;</div>
-                <div>PLAY CREDITS</div>
-              </button>
+        More recently, I was named a 2018 
+        semifinalist in the Austin Film Festival's 
+        screenwriting competition for my period drama 
+        feature LEAH ROSE. 
 
 
-                  <!-- <button id="lr-movie-btn__index">
-                      <a href="movie.html" target="_blank">
+        In the words of one festival
+        judge, LEAH ROSE <em>"is a masterful work that 
+        deserves to be recognized and produced."</em>
 
-                  <div class="lr-movie-symbol__index">&#x25ba;</div>
-                  <div>PLAY MOVIE</div>
-                      </a>
-                </button> -->
-             
-        </div>
-        
-        <div class="col-sm-4 col-md-4 col-lg-4">
-          <div class="img-container__index">
-            <img src="assets/img/LeahRose.png" id="img__index" alt="Leah Rose">
-              <div class="lr-title-img__index">Leah Rose</div>
+        <br><br>
+        Two of my other current 
+        works have also placed in well-regarded 
+        competitions. My drama pilot FISHTOWN, as a 
+        semifinalist in Creative World Awards; and 
+        my dramedy feature BETWEEN LINES, as a 
+        quarterfinalist in both CWA and BlueCat. 
+        <br><br>        <br><br>        <br><br>
+    </p>
+    <!-- <div class="w3-row w3-padding-32">
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="w3-third">
+        <p>Name</p>
+        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
+      </div>
+    </div> -->
+  </div>
+
+  <!-- PROJECTS --> 
+  <div class="w3-black" id="tour" style="height:500px">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center" style="padding-bottom: 100px">PROJECTS</h2>
+      <!-- <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br> -->
+<!-- 
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
+      </ul> -->
+
+      <div class="w3-row-padding">
+        <div class="w3-third w3-margin-bottom">
+          <!-- <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity"> -->
+          <div class="w3-container w3-white">
+            <p><b>LEAH ROSE</b></p>
+            <p class="w3-opacity">Drama | Feature | 100 pages</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('lr-Modal').style.display='block'">Watch Trailer</button>
           </div>
-        </div>  
-        
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <!-- <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity"> -->
+          <div class="w3-container w3-white">
+            <p><b>BETWEEN LINES</b></p>
+            <p class="w3-opacity">Drama | Feature | 90 pages</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('bl-Modal').style.display='block'">Watch Trailer</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <!-- <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity"> -->
+          <div class="w3-container w3-white">
+            <p><b>FISHTOWN</b></p>
+            <p class="w3-opacity">Drama | Pilot | 58 pages</p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('f-Modal').style.display='block'">Watch Trailer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Modal -->
+  <div id="lr-Modal" class="w3-modal">
+
+      <p> When the Crash of 1929 shatters the good life she’s always known, 
+          a spoiled socialite finds purpose through adversity as she fights 
+          to make her way in a harrowing new world.</p>
+
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('lr-Modal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('lr-Modal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="bl-Modal" class="w3-modal">
+
+      <p>  It's a race against time for a frustrated writer who attempts to mend his wild
+      ways before an upcoming high school reunion after he learns that a member of his class
+      has just made a splash in the literary world; but is she a rival he seeks to 
+      impress or the one who got away?</p>
+
+      <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container w3-teal w3-center w3-padding-32"> 
+          <span onclick="document.getElementById('bl-Modal').style.display='none'" 
+         class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+          <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+        </header>
+        <div class="w3-container">
+          <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+          <input class="w3-input w3-border" type="text" placeholder="How many?">
+          <p><label><i class="fa fa-user"></i> Send To</label></p>
+          <input class="w3-input w3-border" type="text" placeholder="Enter email">
+          <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+          <button class="w3-button w3-red w3-section" onclick="document.getElementById('bl-Modal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+          <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="f-Modal" class="w3-modal">
+
+        <p>                       A talented young chef whose abilities have outgrown his gig at a neighborhood dive 
+            must choose between loyalty to a mentor and taking his career to the next level with 
+            the help of his ambitious wife.
+           </p>
+  
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container w3-teal w3-center w3-padding-32"> 
+            <span onclick="document.getElementById('f-Modal').style.display='none'" 
+           class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+            <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+          </header>
+          <div class="w3-container">
+            <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+            <input class="w3-input w3-border" type="text" placeholder="How many?">
+            <p><label><i class="fa fa-user"></i> Send To</label></p>
+            <input class="w3-input w3-border" type="text" placeholder="Enter email">
+            <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+            <button class="w3-button w3-red w3-section" onclick="document.getElementById('f-Modal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+            <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+          </div>
+        </div>
       </div>
 
-      <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-12">
-          <div class="lr-credits__index">
-            <div id="lr-credit1__index"></div>
-            <div id="lr-credit2__index"></div>
-            <div id="lr-credit3__index"></div>
-            <div id="lr-credit4__index"></div>
-            <div id="lr-credit5__index"></div>
-            <div id="lr-credit6__index"></div>
-            <div id="lr-credit7__index"></div>
-            <div id="lr-credit8__index"></div> 
-            <div id="lr-credit9__index"></div>
-            <div id="lr-credit10__index"></div>
-            <div id="lr-credit11__index"></div>
-            <div id="lr-credit12__index"></div>
-            <div id="lr-credit13__index"></div>
-            <div id="lr-credit14__index"></div>
-            <div id="lr-credit15__index"></div>
-            <div id="lr-credit16__index"></div> 
-          </div>             
-          <div class="lr-synopsis__index">
-            <div id="lr-syn1__index"></div>
-            <div id="lr-syn2__index"></div>
-            <div id="lr-syn3__index"></div>
-            <div id="lr-syn4__index"></div>
-            <div id="lr-syn5__index"></div>
-            <div id="lr-syn6__index"></div>
-            <div id="lr-syn7__index"></div>
-            <div id="lr-syn8__index"></div> 
-            <div id="lr-tagline__index"></div>  
-            <div id="lr-title__index"></div> 
-            <img src="assets/img/AFF_18.png" id="lr-aff-img__index" alt="AFF18">                               
-            <div id="lr-quote__index"></div> 
-            <div id="lr-aff__index"></div> 
-          </div>      
-          <img src="assets/img/movie-screen.png" id="lr-screen-img__index" alt="movie screen">
-        </div>
-      </div>  
 
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>3 . . . 2 . . . 1 . . .</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Philadelphia, PA<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: 215.205.9087<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: cjal920@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
     </div>
-            
-    <!-- BETWEEN LINES -->
+  </div>
+  
+<!-- End Page Content -->
+</div>
 
-    <div class="project__index container">
-            <div class="row">
-              <div class="col-sm-8 col-md-8 col-lg-8">
-      
-                <div class="title__index">BETWEEN LINES</div>
-      
-                  <div class="about__index">
-                    <p class="stats__index">Drama | Feature | 90 pages</p>
-                      <p class="bl-logline__index"><em>
-                        
-                        It's a race against time for a frustrated writer who attempts to mend his wild
-                        ways before an upcoming high school reunion after he learns that a member of his class
-                        has just made a splash in the literary world; but is she a rival he seeks to 
-                        impress or the one who got away?
-                      
-                      </em></p>
-                      <div class="awards__index">AWARDS</div>
-                      <a href="https://www.creativeworldawards.com/wp-content/uploads/2015/11/CWA-Quarterfinalists-DRAMA.pdf" id="awards-list__index" target="_blank">Creative World Awards 2016 Quarterfinalist</a>
-                      <br><a href="http://www.creativeworldawards.com/pdf/2015CWAPRELIMINARYFINALISTSALLDRAMAANDFAMILY.pdf" id="awards-list__index" target="_blank">Creative World Awards 2015 Preliminary Finalist (<em>as Piano Player</em>)</a>
-                      <br><a href="https://www.bluecatscreenplay.com/the-bluecat-screenplay-competition-blog/2015-feature-screenplay-quarter-finalists/" id="awards-list__index" target="_blank">BlueCat 2015 Quarterfinalist (<em>as Piano Player</em>)</a>
-                   
-                  </div>
-      
-                    <button id="bl-trailer-btn__index">
-                      <div class="bl-trailer-symbol__index">&#x25ba;</div>
-                    </button>
-      
-              </div>
-              
-              <div class="col-sm-4 col-md-4 col-lg-4">
-                <div class="img-container__index">
-                  <img src="assets/img/BetweenLines.png" id="img__index" alt="Between Lines">
-                    <div class="bl-title-img__index">between lines</div>
-                </div>
-              </div>  
-              
-            </div>
-      
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12">
-                <div class="bl-synopsis__index">
-                  <div id="bl-syn1__index"></div>
-                  <div id="bl-syn2__index"></div>
-                  <div id="bl-syn3__index"></div>
-                  <div id="bl-syn4__index"></div>
-                  <div id="bl-syn5__index"></div>
-                  <div id="bl-syn6__index"></div>
-                  <div id="bl-syn7__index"></div>
-                  <div id="bl-syn8__index"></div> 
-                  <div id="bl-tagline__index"></div>  
-                  <div id="bl-title__index"></div>
-                  <div id="bl-quote__index"></div> 
-                  <div id="bl-aff__index"></div> 
-                </div>      
-                <img src="assets/img/blackBackground.png" id="bl-screen-img__index" alt="screen">
-              </div>
-            </div>  
-      
-          </div>
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
-    <!-- FISHTOWN -->
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Copyright © 2019 Colin Larkin</p>
+</footer>
 
-    <div class="project__index container">
-            <div class="row">
-              <div class="col-sm-8 col-md-8 col-lg-8">
-      
-                <div class="title__index">FISHTOWN</div>
-      
-                  <div class="about__index">
-                    <p class="stats__index">Drama | Pilot | 58 pages</p>
-                      <p class="f-logline__index"><em>
-                        
-                       A talented young chef whose abilities have outgrown his gig at a neighborhood dive 
-                       must choose between loyalty to a mentor and taking his career to the next level with 
-                       the help of his ambitious wife.
-                      
-                      </em></p>
-                      <div class="awards__index">AWARDS</div>
-                      <a href="https://www.creativeworldawards.com/wp-content/uploads/2015/11/CWA-Semifinalists-TV-DRAMA.pdf" id="awards-list__index" target="_blank">Creative World Awards 2016 Semifinalist</a>
-                      <br><a href="http://www.creativeworldawards.com/pdf/2015CWAPRELIMINARYFINALISTSORIGINALTVDRAMA.pdf" id="awards-list__index" target="_blank">Creative World Awards 2015 Preliminary Finalist (<em>as Northern Liberties</em>)</a>
-                     
-                  </div>
-      
-                    <button id="f-trailer-btn__index">
-                      <div class="f-trailer-symbol__index">&#x25ba;</div>
-                    </button>
-      
-              </div>
-              
-              <div class="col-sm-4 col-md-4 col-lg-4">
-                <div class="img-container__index">
-                  <img src="assets/img/Fishtown.png" id="img__index" alt="Fishtown">
-                    <div class="f-title-img__index">Fishtown</div>
-                </div>
-              </div>  
-              
-            </div>
-      
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12">
-                <div class="f-synopsis__index">
-                  <div id="f-syn1__index"></div>
-                  <div id="f-syn2__index"></div>
-                  <div id="f-syn3__index"></div>
-                  <div id="f-syn4__index"></div>
-                  <div id="f-syn5__index"></div>
-                  <div id="f-syn6__index"></div>
-                  <div id="f-syn7__index"></div>
-                  <div id="f-syn8__index"></div> 
-                  <div id="f-tagline__index"></div>  
-                  <div id="f-title__index"></div>
-                  <div id="f-quote__index"></div> 
-                  <div id="f-aff__index"></div> 
-                </div>      
-                <img src="assets/img/blackBackground.png" id="f-screen-img__index" alt="screen">
-              </div>
-            </div>  
-      
-          </div>
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
 
-<!-- VIDEO SCREENS -->
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
 
-            <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
 
-            <!-- <video id="newhope-screen-img__index" controls>
-                    <source src="assets/video/starwars.mp4" type="video/mp4">
-                  </video> -->
-
-                </div> 
-
-            </div> 
-
-            <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-
-            <!-- <video id="empire-screen-img__index" controls>
-                    <source src="assets/video/empire.mp4" type="video/mp4">
-                  </video> -->
-
-                </div> 
-                
-            </div> 
-
-            <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-
-            <!-- <video id="jedi-screen-img__index" controls>
-                    <source src="assets/video/jedi.mp4" type="video/mp4">
-                  </video> -->
-
-                </div> 
-                
-            </div> 
-
-          </div> 
-        <!-- </div> -->
-
-        <!-- <a style="cursor:pointer;" data-toggle="modal" data-target="#package-modal" class="btn btn-success btn-block panel-btn flex-center">
-            Submit
-        </a> -->
-
-        <!-- SOUNDTRACKS -->
- 
-    <audio id="leah-cava__index">
-        <source src="assets/audio/cava.mp3">
-    </audio>
-
-    <audio id="leah-eliz__index">
-        <source src="assets/audio/leah-eliz.mp3">
-    </audio>
-
-    <audio id="leah-bugsy__index">
-        <source src="assets/audio/leah-bugsy.mp3">
-    </audio>
-
-    <audio id="leah-fatman__index">
-        <source src="assets/audio/leah-fatman.mp3">
-    </audio>
-
-    <audio id="leah-days__index">
-        <source src="assets/audio/leah-days.mp3">
-    </audio>
-
-    <!-- <audio id="leah-onegin__index">
-        <source src="assets/audio/leah-onegin.mp3">
-    </audio> -->
-
-    <audio id="leah-rach__index">
-        <source src="assets/audio/leah-rach.mp3">
-    </audio>
-
-    <audio id="leah-penderecki__index">
-            <source src="assets/audio/leah-penderecki.mp3">
-        </audio>
-
-        <audio id="leah-mice__index">
-                <source src="assets/audio/leah-mice.mp3">
-            </audio>   
-            
-            <audio id="leah-delerue__index">
-                <source src="assets/audio/leah-delerue.mp3">
-            </audio>              
-
-<!-- JAVASCRIPT -->
-
-    <script type="text/javascript" src="assets/js/index.js"></script>
-
-
-
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
 
 </body>
 </html>
